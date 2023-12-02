@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WooCommerce Price Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .price-filter-widget {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .price-slider {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .price-slider-range {
+            height: 100%;
+            background-color: #007BFF;
+            position: absolute;
+        }
+
+        .price-slider-handle {
+            width: 20px;
+            height: 20px;
+            background-color: #007BFF;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .price-label {
+            margin-top: 10px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <aside class="widget woocommerce widget_price_filter">
+        <form method="get" action="https://coleo.themerex.net/shop/">
+            <div class="price-filter-widget">
+                <div class="price-slider">
+                    <div class="price-slider-range" style="width: 100%;"></div>
+                    <span tabindex="0" class="price-slider-handle" style="left: 0%;"></span>
+                    <span tabindex="0" class="price-slider-handle" style="left: 100%;"></span>
+                </div>
+            </div>
+        </form>
+    </aside>
+</body>
+</html>

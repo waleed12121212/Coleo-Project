@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--? main.css -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!--? media.css -->
+  <link rel="stylesheet" href="../css/media.css">
+  <!--? boot strap -->
+  <link rel="stylesheet" href="../../vender/bootstrap/css/bootstrap.min.css">
+  <!--? font awesome -->
+  <link rel="stylesheet" href="../../vender/fontawesome-free-6.4.2-web/css/all.css">
+  <title>Coleo</title>
+</head>
+<body>
+   <!--? start loading -->
+   <div class="loading bg-white position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
+    <span class="loader"></span>
+  </div> 
+  <!--? Demo tabs -->
+  <!--? Demo tabs -->
+  <div class="demo-tabs d-grid position-fixed">
+    <div class="d-inline-flex flex-row-reverse"><a href="signup.html" class="text-decoration-none text-white"><div class="shop w-60"><i class="fa-solid fa-cart-shopping"></i></div></a> <div class="textS d-none opacity-0"><p>BUY THEME</p></div> </div>
+    <div class="d-inline-flex flex-row-reverse"><a href="assets/html/shop.html" class="text-decoration-none text-white"><div class="photo w-60"><i class="fa-solid fa-images"></i></div> </a><div class="textP d-none opacity-0"><p>OUR BESTSELLERS</p></div></div>
+    <div class="d-inline-flex flex-row-reverse"><div class="head w-60" onclick="headDemoTab()"><i class="fa-solid fa-window-maximize"></i></div> <div class="textH d-none opacity-0"><p>HEAD PANEL</p></div></div>
+  </div>
+  <!--? Scroll to up -->
+  <div class="scroll-to-up bg-mainColor">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+   <!--? login -->
+    <div class="loginpage w-100 vh-100 position-fixed z-3 d-none" id="loginpage">
+      <div class="signin wh-signin position-relative" id="loginSpace">
+        <button class="border-0 position-absolute bg-transparent end-top-4" id="close"><i class="fa-solid fa-x"></i></button>
+        <div class="information text-center">
+          <div class="row pb-5 w-100 mt-5">
+              <div class="col-md-12 mb-3 position-relative">
+                  <input type="text" name="userName" id="userName" placeholder="LOGIN" >
+              </div>
+              <div class="col-md-12 position-relative d-flex flex-wrap wrap justify-content-center">
+                  <input type="password" name="userPassword" id="userPassword" placeholder="PASSWORD" >
+              </div>
+          </div>
+          <div class="row pb-3 text-center w-100">
+              <div class="col-md-6 col-sm-12">
+                  <button class="fs-11 curser-grap" id="Login">Login</button>
+              </div>
+              <div class="col-md-6 col-sm-12 ">
+                  <a href="signup.html" class="text-decoration-none text-black d-block">signup</a>
+                  <input type="checkbox" value="forever" id="rememberme" name="rememberme"><label for="rememberme"> Remember me</label>
+              </div>
+              
+          </div>
+      </div>
+      </div>
+    </div>
+ <!--? Start header -->
+ <section class="header vh-140" id="home-1">
+    <div class="container">
+    <!--! Start navbar -->
+    <nav class="bg-light navbar navbar-expand-lg fixed-top text-gray fs-13 px-5 z-2">
+      <!-- <div class="navbar-container d-flex"> -->
+      <div class="row justify-content-center align-items-center container-fluid d-flex">
+      <!--! logo -->
+      <div class="col-sm-5 col-md-2 mb-sm-25 mb-md-0 text-start p-0 text-center d-flex justify-content-center">
+          <img src="../image/logo-1x-dark.webp" alt="logo" class="w-50 main-logo">
+      </div>
+      <!--! end logo -->
+      <div class="col-md-6 col-sm-0 dg-center">
+          <div class="collapse navbar-collapse h-131" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-item-center gap-3">
+              <li class="nav-item position-relative">
+              <a class="nav-link line" aria-current="page" href="../../index.html">HOME</a>
+              </li>
+              <li class="nav-item position-relative">
+              <a class="nav-link line" aria-current="page" href="shop.html">SHOP</a>
+              </li>
+              <li class="nav-item position-relative">
+              <a class="nav-link line" href="news.html">NEWS</a>
+              </li>
+              <li class="nav-item position-relative">
+              <a class="nav-link active line" href="contacts.html">CONTACTS</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+      <div class="col-sm-5 col-md-4 text-end d-flex justify-content-end position-relative justify-content-center">
+          <div class="content d-flex gap-5">
+          <a href="#tell" class="text-gray fs-13 text-decoration-none remove">8 800 256 36 84</a>
+          <button class="text-gray fs-13 border-0 bg-transparent" id="openLogin"><p class="login removeLogin position-relative">Login</p></button>
+          <form class="d-flex" role="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+          <form class="d-flex position-relative" role="search">
+              <i class="position-absolute rounded-pill count">0</i>
+              <i class="fa-solid fa-cart-shopping"></i>
+          </form>
+          <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+      </div>
+      <!-- </div> -->
+      </div>
+  </nav>
+</div>
+  <!--! End navbar -->
+      <!--! Start header content-->
+      <div class="header-contentContacts px-5">
+        <div class="header-content-overlay">
+        <div class="w-100">
+            <div class="empty-space"></div>
+            <div class="content text-center pt-8">
+                <h2>Contacts</h2>
+                <span class="link-content text-white">
+                    <a href="../../index.html" class="me-2">Home</a>
+                    /
+                    <a href="#" class="ms-2">Contacts</a>
+                </span>
+
+            </div>
+            <div class="empty-space"></div>
+        </div>
+        </div>
+      </div>
+      <!--! End header content -->
+      <div class="contactsDet w-97">
+        <div class="empty-space"></div>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-sm-12 gap-2 text-center">
+            <div class="icon pb-3"><i class="fa-solid fa-location-dot"></i></div>
+            <h4 class="icon-item-title pb-2"><span>Address</span></h4>
+            <div class="icons_item_description">
+                539 Cherry Tree <br>DriveJacksonville, FL 32216
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 gap-2 text-center">
+            <div class="icon pb-3"><i class="fa-solid fa-phone-volume"></i></div>
+            <h4 class="icon-item-title pb-2"><span>Phone</span></h4>
+            <div class="icons_item_description d-grid">
+                    <a href="tel:8 800 158 45 78" class="color-maincolor text-decoration-none">8 800 158 45 78</a>
+                    <a href="tel:8 800 123 45 67" class="color-maincolor text-decoration-none">8 800 123 45 67</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 gap-2 text-center">
+            <div class="icon pb-3"><i class="fa-regular fa-envelope"></i></div>
+            <h4 class="icon-item-title pb-2"><span>Email</span></h4>
+            <div class="icons_item_description d-grid">
+                
+                
+                <a href="mailto:example@info.com" class="color-maincolor text-decoration-none">example@info.com</a>
+                <a href="mailto:site_example@info.com" class="color-maincolor text-decoration-none">site_example@info.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="empty-space"></div>
+      </div>
+  </section>
+  <!--? End header -->
+  <div class="empty-space"></div>
+  <div class="empty-space"></div>
+  <!--? Start map section -->
+  <div class="map vh-100">
+    <iframe class="w-100 vh-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13513.325158424317!2d35.29669874944911!3d32.14135725211494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cde8e09aea509%3A0x5f1f34e632ceeef1!2z2KjZitiq2Kcg2KfZhNmB2YjZgtin!5e0!3m2!1sar!2s!4v1693493025512!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!--? End map section -->
+
+  <!--? Start note section -->
+<div class="note position-relative">
+    <div class="container">
+        <div class="title text-center py-4">
+            <h2>Let's Get In Touch</h2>
+        </div>
+    </div>
+    <div class="information text-center">
+        <div class="row pb-5 w-100">
+            <div class="col-md-6 text-md-end pb-5">
+                <input class="w-50 pb-3" type="text" name="userName" id="userName" placeholder="YOUR NAME*" >
+            </div>
+            <div class="col-md-6 text-md-start">
+                <input class="w-50 pb-3" type="email" name="userEmail" id="userEmail" placeholder="YOUR E-MAIL*" >
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col-md-12 ">
+                <input class="w-52 pb-6" type="text" name="message" id="message" placeholder="YOUR MESSAGE*" class="w-52">
+            </div>
+        </div>
+        <div class="row py-3 text-center w-100">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <button class="fs-11">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--? End note section -->
+
+  <!--? Start footer -->
+ <section class="contactsFooter py-5 text-center m-5">
+  <div class="container px-5 py-5">
+    <div class="d-flex justify-content-center">
+      <div class="signUpContainer position-relative py-2 w-50 ">
+        <input class="signUp" type="email" name="email" placeholder="NEWSLETTER SIGN UP">
+        <button type="submit" class="signupSubmit position-absolute"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="menuFooter">
+      <ul class="d-inline-flex ps-0 text-dark">
+        <li class="fs-13 px-3 pt-5 pb-4"><a href="../../index.html" class="text-decoration-none">HOME</a></li>
+        <li class="fs-13 px-3 pt-5 pb-4"><a href="shop.html" class="text-decoration-none">SHOP</a></li>
+        <li class="fs-13 px-3 pt-5 pb-4"><a href="news.html" class="text-decoration-none">NEWS</a></li>
+        <li class="fs-13 px-3 pt-5 pb-4 active"><a href="contacts.html" class="text-decoration-none">CONTACTS</a></li>
+      </ul>
+    </div>
+    <div class="Copyright">
+      Copyright &copy; 2023 by <a href="https://themerex.net" target="_blank" class="text-decoration-none">ThemeREX</a>. All rights reserved.
+    </div>
+    <div class="footerIcon pt-5 d-flex justify-content-center">
+      <ul class="d-flex ps-0">
+        <li class="px-3"><a href="#" class="text-decoration-none "><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class="px-3"><a href="#" class="text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li class="px-3"><a href="#" class="text-decoration-none"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li class="px-3"><a href="#" class="text-decoration-none"><i class="fa-brands fa-youtube"></i></a></li>    
+      </ul>
+    </div>
+  </div>
+  
+ </section>
+  <!--? End footer -->
+  <!--! start js -->
+  <!--? boot strap -->
+  <script src="../../vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--? sweet alert  -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--? main.js -->
+  <script src="../js/main.js"></script>
+  <!--? signin.js  -->
+  <script src="../js/signin.js"></script>
+  <!--! end js -->
+</body>

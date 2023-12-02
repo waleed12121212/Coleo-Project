@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? main.css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--? media.css -->
+    <link rel="stylesheet" href="../css/media.css">   
+    <!--? boot strap -->
+    <link rel="stylesheet" href="../../vender/bootstrap/css/bootstrap.min.css">
+    <!--? font awesome -->
+    <link rel="stylesheet" href="../../vender/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Coleo</title>
+</head>
+
+<body>
+     <!--? start loading -->
+     <div class="loading bg-white position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
+        <span class="loader"></span>
+      </div> 
+      <!--? Demo tabs -->
+    <!--? Demo tabs -->
+    <div class="demo-tabs d-grid position-fixed">
+        <div class="d-inline-flex flex-row-reverse"><a href="signup.html" class="text-decoration-none text-white"><div class="shop w-60"><i class="fa-solid fa-cart-shopping"></i></div></a> <div class="textS d-none opacity-0"><p>BUY THEME</p></div> </div>
+        <div class="d-inline-flex flex-row-reverse"><a href="assets/html/shop.html" class="text-decoration-none text-white"><div class="photo w-60"><i class="fa-solid fa-images"></i></div> </a><div class="textP d-none opacity-0"><p>OUR BESTSELLERS</p></div></div>
+        <div class="d-inline-flex flex-row-reverse"><div class="head w-60" onclick="headDemoTab()"><i class="fa-solid fa-window-maximize"></i></div> <div class="textH d-none opacity-0"><p>HEAD PANEL</p></div></div>
+    </div>
+    <!--? Scroll to up -->
+    <div class="scroll-to-up bg-mainColor">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+     <!--? login -->
+    <div class="loginpage w-100 vh-100 position-fixed z-3 d-none" id="loginpage">
+        <div class="signin wh-signin position-relative" id="loginSpace">
+        <button class="border-0 position-absolute bg-transparent end-top-4" id="close"><i class="fa-solid fa-x"></i></button>
+        <div class="information text-center">
+            <div class="row pb-5 w-100 mt-5">
+                <div class="col-md-12 mb-3 position-relative">
+                    <input type="text" name="userName" id="userName" placeholder="LOGIN" >
+                </div>
+                <div class="col-md-12 position-relative d-flex flex-wrap wrap justify-content-center">
+                    <input type="password" name="userPassword" id="userPassword" placeholder="PASSWORD" >
+                </div>
+            </div>
+            <div class="row pb-3 text-center w-100">
+                <div class="col-md-6 col-sm-12">
+                    <button class="fs-11 curser-grap" id="Login">Login</button>
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <a href="signup.html" class="text-decoration-none text-black d-block">signup</a>
+                    <input type="checkbox" value="forever" id="rememberme" name="rememberme"><label for="rememberme"> Remember me</label>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--? Start header -->
+    <section class="header" id="home-1">
+        <div class="container">
+            <!--! Start navbar -->
+            <nav class="bg-light navbar navbar-expand-lg fixed-top text-gray fs-13 px-5 z-2">
+                <!-- <div class="navbar-container d-flex"> -->
+                <div class="row justify-content-center align-items-center container-fluid d-flex">
+                <!--! logo -->
+                <div class="col-sm-5 col-md-2 mb-sm-25 mb-md-0 text-start p-0 text-center d-flex justify-content-center">
+                    <img src="../image/logo-1x-dark.webp" alt="logo" class="w-50 main-logo">
+                </div>
+                <!--! end logo -->
+                <div class="col-md-6 col-sm-0 dg-center">
+                    <div class="collapse navbar-collapse h-131" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-item-center gap-3">
+                        <li class="nav-item">
+                        <a class="nav-link line" aria-current="page" href="../../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link line" aria-current="page" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active line" href="news.html">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link line" href="contacts.html">CONTACTS</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 text-end d-flex justify-content-end position-relative justify-content-center">
+                    <div class="content d-flex gap-5">
+                    <a href="#tell" class="text-gray fs-13 text-decoration-none remove">8 800 256 36 84</a>
+                    <button class="text-gray fs-13 border-0 bg-transparent" id="openLogin"><p class="login removeLogin position-relative">Login</p></button>
+                    <form class="d-flex" role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                    <form class="d-flex position-relative" role="search">
+                        <i class="position-absolute rounded-pill count">0</i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </form>
+                    <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    </div>
+                </div>
+                <!-- </div> -->
+                </div>
+            </nav>
+            <!--! End navbar -->
+        </div>
+        <!--! Start header content-->
+        <div class="header-contentContacts px-5">
+            <div class="header-content-overlay">
+                <div class="w-100">
+                    <div class="empty-space"></div>
+                    <div class="content text-center pt-8">
+                        <h2>All Posts</h2>
+                        <span class="link-content text-white">
+                            <a href="../../index.html" class="me-2">Home</a>
+                            /
+                            <a href="#" class="ms-2">ALL POSTS</a>
+                        </span>
+
+                    </div>
+                    <div class="empty-space"></div>
+                </div>
+            </div>
+        </div>
+        <!--! End header content -->
+    </section>
+    <!--? End header -->
+
+    <!--? Start news content-->
+    <div class="empty-space"></div>
+    <div class="newsContent py-5 px-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-md-12 col-lg-12 col-sm-12 sidebar-right">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div id="carouselExampleIndicators" class="carousel slide w-705">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/News section/post-7-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-2-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-4-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 2, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Custom Clothing</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="date third position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 28, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Tips & Tricks</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            What to Prepare When You’re Travelling for a Holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-5-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 27, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Fashion Trends</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            There’s a New It-Bag in Town, and It’s Not What You Expect
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-9-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 20, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Lifestyle</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Summer 2018 style inspirations just for you
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="date third position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 12, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Tips & Tricks</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            What should you wear in winter? Check out our tips for winter
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-6-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            The simplest way to look chic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Custom-tab-pane" role="tabpanel" aria-labelledby="Custom-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div id="carouselExampleIndicators" class="carousel slide w-705 h-450">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/News section/post-7-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-2-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-4-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 2, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Custom Clothing</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Fashion-tab-pane" role="tabpanel" aria-labelledby="Fashion-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="date third position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 28, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Tips & Tricks</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            What to Prepare When You’re Travelling for a Holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Lifestyle-tab-pane" role="tabpanel"
+                            aria-labelledby="Lifestyle-tab" tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-9-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 20, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Lifestyle</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Summer 2018 style inspirations just for you
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="News-tab-pane" role="tabpanel" aria-labelledby="News-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-5-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 27, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Fashion Trends</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            There’s a New It-Bag in Town, and It’s Not What You Expect
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-6-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            The simplest way to look chic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-8-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">4</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">5</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            When should you dispose of makeup?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-7-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">1</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Appropriate accessories and color combinationsLooks, modern
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="date third position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 12, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Tips & Tricks</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            What should you wear in winter? Check out our tips for winter
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Tips-tab-pane" role="tabpanel" aria-labelledby="Tips-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="date third position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 12, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Tips & Tricks</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            What should you wear in winter? Check out our tips for winter
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="fashion-tab-pane" role="tabpanel" aria-labelledby="fashion-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div id="carouselExampleIndicators" class="carousel slide w-705 h-450">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/News section/post-7-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-2-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/News section/post-4-copyright-705x450.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 2, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Custom Clothing</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="looks-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-5-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 27, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Fashion Trends</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            There’s a New It-Bag in Town, and It’s Not What You Expect
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-6-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            The simplest way to look chic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="modern-tab-pane" role="tabpanel" aria-labelledby="modern"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-9-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 20, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Lifestyle</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Summer 2018 style inspirations just for you
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="news-tab-pane" role="tabpanel" aria-labelledby="news-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-9-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 20, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Lifestyle</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Summer 2018 style inspirations just for you
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="style-tab-pane" role="tabpanel" aria-labelledby="style-tab"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-6-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            The simplest way to look chic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-8-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">4</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">5</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            When should you dispose of makeup?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-7-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">1</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">2</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Appropriate accessories and color combinationsLooks, modern
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trends-tab-pane" role="tabpanel" aria-labelledby="trends"
+                            tabindex="0">
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-4-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 7, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            Cruising in style: the 11 best buys for a holiday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-5-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            December 27, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">Fashion Trends</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">3</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            There’s a New It-Bag in Town, and It’s Not What You Expect
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post position-relative mb-9">
+                                <div class="position-relative">
+                                <div class="image w-705 h-450 position-absolute">
+                                    <div class="news-overlay position-absolute text-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <img src="../image/News section/post-6-copyright-705x450.jpg" alt="">
+                                </div>
+                                <div class="date position-absolute">
+                                    <span class="post-date">
+                                        <a href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/"
+                                            class="text-decoration-none">
+                                            NOVEMBER 8, 2017
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="comment d-flex justify-content-between py-4 w-705">
+                                    <div class="text-start d-inline-block">
+                                        <button class="fs-13 me-4">NEWS & UPDATES</button>
+                                        <a class="post_author me-2" rel="author"
+                                            href="https://coleo.themerex.net/author/trx_admin/">
+                                            Alisha Williams
+                                        </a>
+                                        <a class="post_comment_item mx-2"
+                                            href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/#comments">
+                                            <span class="comment_number">0</span>
+                                            <span class="comment_label">Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="comment-icon text-end d-inline-block">
+                                        <span><a href="#" class="share me-3"><i
+                                                    class="fa-solid fa-share"></i></a></span>
+                                        <a href="#" class="like">
+                                            <span class="like_label"><i class="fa-solid fa-thumbs-up"></i></span>
+                                            <span class="like_number">0</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-title py-2">
+                                    <h4>
+                                        <a href="https://coleo.themerex.net/cruising-in-style-the-11-best-buys-for-a-holiday/"
+                                            class="text-decoration-none" rel="bookmark">
+                                            The simplest way to look chic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="post-content pt-5">
+                                    <a class="more-link text-decoration-none "
+                                        href="https://coleo.themerex.net/toni-garrns-supermodel-flea-mark-comes-to-london/">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 sidebar-left">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="categories">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Categories</h2>
+                                </div>
+                                <ul class="nav nav-tabs d-block" id="myTab" role="tablist">
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true"></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="Custom-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Custom-tab-pane" type="button" role="tab"
+                                            aria-controls="Custom-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Custom Clothing</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="Fashion-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Fashion-tab-pane" type="button" role="tab"
+                                            aria-controls="Fashion-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Fashion Trends</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="Lifestyle-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Lifestyle-tab-pane" type="button" role="tab"
+                                            aria-controls="Lifestyle-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Lifestyle</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="News-tab" data-bs-toggle="tab"
+                                            data-bs-target="#News-tab-pane" type="button" role="tab"
+                                            aria-controls="News-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">News & Updates</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Tips-tab-pane" type="button" role="tab"
+                                            aria-controls="Tips-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Tips & Tricks</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="search-container">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Search</h2>
+                                </div>
+                                <form class="d-flex position-relative" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search..."
+                                        aria-label="Search">
+                                    <button type="submit" class="signupSubmit position-absolute"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="featuredproducts">
+                                <div class="featured-title position-relative pb-3">
+                                    <h2>Featured Products</h2>
+                                </div>
+                                <ul class="product-list">
+                                    <li class="pb-3">
+                                        <a href="https://coleo.themerex.net/product/light-turtleneck/"
+                                            class="text-decoration-none">
+                                            <img width="238" height="287"
+                                                src="../image/News section/product-12-copyright-238x287.jpg" alt=""
+                                                decoding="async" loading="lazy">
+                                            <span class="d-inline-grid">
+                                                <span class="product-title">Light turtleneck</span>
+                                                <span class="prase">
+                                                    <span>
+                                                        <bdi>
+                                                            <span>$</span>23.00</bdi>
+                                                    </span> – <span>
+                                                        <bdi><span>$</span>32.00</bdi>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="pb-3">
+                                        <a href="https://coleo.themerex.net/product/light-turtleneck/"
+                                            class="text-decoration-none">
+                                            <img width="238" height="287"
+                                                src="../image/News section/product-11-copyright-238x287.jpg" alt=""
+                                                decoding="async" loading="lazy">
+                                            <span class="d-inline-grid">
+                                                <span class="product-title">Men's t-shirt</span>
+                                                <span class="prase">
+                                                    <span>
+                                                        <bdi>
+                                                            <span>$</span>20.00</bdi>
+                                                    </span> – <span>
+                                                        <bdi><span>$</span>30.00</bdi>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="poster">
+                                <img src="../image/News section/img-1.jpg" alt="" class="w-fill">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="tags">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Tags</h2>
+                                </div>
+                                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="fashion-tab" data-bs-toggle="tab"
+                                            data-bs-target="#fashion-tab-pane" type="button" role="tab"
+                                            aria-controls="fashion-tab-pane" aria-selected="true">Fashion</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="looks-tab" data-bs-toggle="tab"
+                                            data-bs-target="#looks-tab-pane" type="button" role="tab"
+                                            aria-controls="looks-tab-pane" aria-selected="false">Looks</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="modern" data-bs-toggle="tab"
+                                            data-bs-target="#modern-tab-pane" type="button" role="tab"
+                                            aria-controls="modern" aria-selected="false">modern</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="news-tab" data-bs-toggle="tab"
+                                            data-bs-target="#news-tab-pane" type="button" role="tab"
+                                            aria-controls="news-tab-pane" aria-selected="false">news</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="style-tab" data-bs-toggle="tab"
+                                            data-bs-target="#style-tab-pane" type="button" role="tab"
+                                            aria-controls="style-tab-pane" aria-selected="false">style</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="trends-tab" data-bs-toggle="tab"
+                                            data-bs-target="#trends-tab-pane" type="button" role="tab"
+                                            aria-controls="trends-tab-pane" aria-selected="false">Trends</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--? End news content -->
+
+        <!--? Start footer -->
+        <section class="contactsFooter py-5 text-center m-5">
+            <div class="container px-5 py-5">
+                <div class="d-flex justify-content-center">
+                    <div class="signUpContainer position-relative py-2 w-50 ">
+                        <input class="signUp" type="email" name="email" placeholder="NEWSLETTER SIGN UP">
+                        <button type="submit" class="signupSubmit position-absolute"><a href="signup.html"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    </div>
+                </div>
+                <div class="menuFooter">
+                    <ul class="d-inline-flex ps-0 text-dark">
+                        <li class="fs-13 px-3 pt-5 pb-4"><a href="../../index.html"
+                                class="text-decoration-none">HOME</a></li>
+                        <li class="fs-13 px-3 pt-5 pb-4"><a href="shop.html" class="text-decoration-none">SHOP</a></li>
+                        <li class="fs-13 px-3 pt-5 pb-4 active"><a href="#" class="text-decoration-none">NEWS</a></li>
+                        <li class="fs-13 px-3 pt-5 pb-4"><a href="contacts.html" class="text-decoration-none">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Copyright">
+                    Copyright &copy; 2023 by <a href="https://themerex.net" target="_blank"
+                        class="text-decoration-none">ThemeREX</a>. All rights reserved.
+                </div>
+                <div class="footerIcon pt-5 d-flex justify-content-center">
+                    <ul class="d-flex ps-0">
+                        <li class="px-3"><a href="#" class="text-decoration-none "><i
+                                    class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="px-3"><a href="#" class="text-decoration-none"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="px-3"><a href="#" class="text-decoration-none"><i
+                                    class="fa-brands fa-pinterest"></i></a></li>
+                        <li class="px-3"><a href="#" class="text-decoration-none"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <!--? End footer -->
+
+        <!--! start js -->
+        <!--? boot strap -->
+        <script src="../../vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--? sweet alert  -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--? main.js -->
+        <script src="../js/main.js"></script>
+        <!--? signin.js  -->
+        <script src="../js/signin.js"></script>
+        <!--! end js -->
+</body>
+
+</html>

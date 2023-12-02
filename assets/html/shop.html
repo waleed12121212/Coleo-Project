@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? main.css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--? media.css -->
+    <link rel="stylesheet" href="../css/media.css">
+    <!--? boot strap -->
+    <link rel="stylesheet" href="../../vender/bootstrap/css/bootstrap.min.css">
+    <!--? font awesome -->
+    <link rel="stylesheet" href="../../vender/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Coleo</title>
+</head>
+<body class='overflow-auto'>
+     <!--? start loading -->
+     <!-- <div class="loading bg-white position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
+        <span class="loader"></span>
+      </div>  -->
+      <!--? Demo tabs -->
+    <!--? Scroll to up -->
+    <div class="scroll-to-up bg-mainColor">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+     <!--? login -->
+    <div class="loginpage w-100 vh-100 position-fixed z-3 d-none" id="loginpage">
+        <div class="signin wh-signin position-relative" id="loginSpace">
+        <button class="border-0 position-absolute bg-transparent end-top-4" id="close"><i class="fa-solid fa-x"></i></button>
+        <div class="information text-center">
+            <div class="row pb-5 w-100 mt-5">
+                <div class="col-md-12 mb-3 position-relative">
+                    <input type="text" name="userName" id="userName" placeholder="LOGIN" >
+                </div>
+                <div class="col-md-12 position-relative d-flex flex-wrap wrap justify-content-center">
+                    <input type="password" name="userPassword" id="userPassword" placeholder="PASSWORD" >
+                </div>
+            </div>
+            <div class="row pb-3 text-center w-100">
+                <div class="col-md-6 col-sm-12">
+                    <button class="fs-11 curser-grap" id="Login">Login</button>
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <a href="signup.html" class="text-decoration-none text-black d-block">signup</a>
+                    <input type="checkbox" value="forever" id="rememberme" name="rememberme"><label for="rememberme"> Remember me</label>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--? Start header -->
+    <section class="header" id="home-1">
+        <div class="container">
+            <!--! Start navbar -->
+                <nav class="bg-light navbar navbar-expand-lg fixed-top text-gray fs-13 px-5 z-2">
+                    <!-- <div class="navbar-container d-flex"> -->
+                    <div class="row justify-content-center align-items-center container-fluid d-flex">
+                    <!--! logo -->
+                    <div class="col-sm-5 col-md-2 mb-sm-25 mb-md-0 text-start p-0 text-center d-flex justify-content-center">
+                        <img src="../image/logo-1x-dark.webp" alt="logo" class="w-50 main-logo">
+                    </div>
+                    <!--! end logo -->
+                    <div class="col-md-6 col-sm-0  dg-center">
+                        <div class="collapse navbar-collapse h-131" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-item-center gap-3">
+                            <li class="nav-item">
+                            <a class="nav-link line" aria-current="page" href="../../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active line" aria-current="page" href="shop.html">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link line" href="news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link line" href="contacts.html">CONTACTS</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 text-end d-flex justify-content-end position-relative justify-content-center">
+                        <div class="content d-flex gap-5">
+                        <a href="#tell" class="text-gray fs-13 text-decoration-none remove">8 800 256 36 84</a>
+                        <button class="text-gray fs-13 border-0 bg-transparent" id="openLogin"><p class="login removeLogin position-relative">Login</p></button>
+                        <form class="d-flex" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                        <form class="d-flex position-relative" role="search">
+                            <i class="position-absolute rounded-pill count">0</i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </form>
+                        <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    </div>
+                </nav>
+            <!--! End navbar -->
+        </div>
+        <!--! Start header content  -->
+        <div class="header-contentContacts px-5">
+            <div class="header-content-overlay">
+                <div class="w-100">
+                    <div class="empty-space"></div>
+                    <div class="content text-center pt-8">
+                        <h2>Shop</h2>
+                        <span class="link-content text-white">
+                            <a href="../../index.html" class="me-2">Home</a>
+                            /
+                            <a href="#" class="ms-2">Shop</a>
+                        </span>
+
+                    </div>
+                    <div class="empty-space"></div>
+                </div>
+            </div>
+        </div>
+        <!--! End header content -->
+    </section>
+    <!--? End header -->
+
+    <div class="empty-space"></div>
+    <!--? start shop content -->
+    <section class="shopContent py-5 px-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 sidebar-left">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="price-filter">
+                                <form>
+                                    <div class="price-slider-container">
+                                        <div class="price_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" style="">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;">
+                                            </div>
+                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+                                            </span>
+                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="price_label" style="">
+                                        Price: <span class="from">$20</span> — <span class="to">$490</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="categories">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Categories</h2>
+                                </div>
+                                <ul class="nav nav-tabs d-block" id="myTab" role="tablist">
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true"></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id=her-tab" data-bs-toggle="tab"
+                                            data-bs-target="#her-tab-pane" type="button" role="tab"
+                                            aria-controls="her-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Her - Classics</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="him-tab" data-bs-toggle="tab"
+                                            data-bs-target="#him-tab-pane" type="button" role="tab"
+                                            aria-controls="him-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Him - Classics</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="hip-tab" data-bs-toggle="tab"
+                                            data-bs-target="#hip-tab-pane" type="button" role="tab"
+                                            aria-controls="hip-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Hipster Collection</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="men-tab" data-bs-toggle="tab"
+                                            data-bs-target="#men-tab-pane" type="button" role="tab"
+                                            aria-controls="men-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Men Collection</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="trending-tab" data-bs-toggle="tab"
+                                            data-bs-target="#trinding-tab-pane" type="button" role="tab"
+                                            aria-controls="trending" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Trending Collection</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="uncategorized-tab" data-bs-toggle="tab"
+                                            data-bs-target="#uncategorized-tab-pane" type="button" role="tab"
+                                            aria-controls="uncategorized-tab-pane" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Uncategorized</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="winter-tab" data-bs-toggle="tab"
+                                            data-bs-target="#winter-tab-pane" type="button" role="tab"
+                                            aria-controls="winter" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Winter Accessories</span></button>
+                                    </li>
+                                    <li class="nav-item position-relative" role="presentation">
+                                        <button class="nav-link" id="women-tab" data-bs-toggle="tab"
+                                            data-bs-target="#women-tab-pane" type="button" role="tab"
+                                            aria-controls="women" aria-selected="false"><i
+                                                class="fa-regular fa-circle-dot position-absolute start-0 top-30"></i><span
+                                                class="ps-3">Women Collection</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="search-container">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Search</h2>
+                                </div>
+                                <form class="d-flex position-relative" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search for products ..."
+                                        aria-label="Search">
+                                    <button type="submit" class="signupSubmit position-absolute"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="featuredproducts">
+                                <div class="featured-title position-relative pb-3">
+                                    <h2>Featured Products</h2>
+                                </div>
+                                <ul class="product-list">
+                                    <li class="pb-3">
+                                        <a href="https://coleo.themerex.net/product/light-turtleneck/"
+                                            class="text-decoration-none">
+                                            <img width="238" height="287"
+                                                src="../image/News section/product-12-copyright-238x287.jpg" alt=""
+                                                decoding="async" loading="lazy">
+                                            <span class="d-inline-grid">
+                                                <span class="product-title">Light turtleneck</span>
+                                                <span class="prase">
+                                                    <span>
+                                                        <bdi>
+                                                            <span>$</span>23.00</bdi>
+                                                    </span> – <span>
+                                                        <bdi><span>$</span>32.00</bdi>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="pb-3">
+                                        <a href="https://coleo.themerex.net/product/light-turtleneck/"
+                                            class="text-decoration-none">
+                                            <img width="238" height="287"
+                                                src="../image/News section/product-11-copyright-238x287.jpg" alt=""
+                                                decoding="async" loading="lazy">
+                                            <span class="d-inline-grid">
+                                                <span class="product-title">Men's t-shirt</span>
+                                                <span class="prase">
+                                                    <span>
+                                                        <bdi>
+                                                            <span>$</span>20.00</bdi>
+                                                    </span> – <span>
+                                                        <bdi><span>$</span>30.00</bdi>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-12 col-md-6 col-lg-6  mb-5 pb-4 bb">
+                            <div class="tags">
+                                <div class="categories-title position-relative pb-3">
+                                    <h2>Tags</h2>
+                                </div>
+                                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="collection" data-bs-toggle="tab"
+                                            data-bs-target="#collection-pane" type="button" role="tab"
+                                            aria-controls="collection-pane" aria-selected="true">Collection</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id=dress-tab" data-bs-toggle="tab"
+                                            data-bs-target="dress-tab-pane" type="button" role="tab"
+                                            aria-controls=dress-tab-pane" aria-selected="false">Dress</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="polo" data-bs-toggle="tab"
+                                            data-bs-target="#polo-tab-pane" type="button" role="tab"
+                                            aria-controls="polo" aria-selected="false">Polo</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="sale" data-bs-toggle="tab"
+                                            data-bs-target="#sale-pane" type="button" role="tab"
+                                            aria-controls="sale-pane" aria-selected="false">Sale</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="season-tab" data-bs-toggle="tab"
+                                            data-bs-target="#season-tab-pane" type="button" role="tab"
+                                            aria-controls="season-tab-pane" aria-selected="false">Season</button>
+                                    </li>
+                                    <li class="nav-item mb-1 me-1" role="presentation">
+                                        <button class="nav-link" id="shoes" data-bs-toggle="tab"
+                                            data-bs-target="#shoes-pane" type="button" role="tab"
+                                            aria-controls="shoes-pane" aria-selected="false">Shoes</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-12 col-lg-12 col-sm-12 sidebar-right">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-12-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">POLO</a>
+                                        <h2 class="d-block"><a href="#">Light turtleneck</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>23.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>32.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-11-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Men’s t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-10-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">Dress</a>
+                                        <h2 class="d-block"><a href="#">Midi dress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>100.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>135.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-9-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">Men’s longsleave</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>55.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-8-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">DRESS</a>
+                                        <h2 class="d-block"><a href="#">Sundress newpoint</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>85.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>95.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-7-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Women’s sundress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>35.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-6-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Set-in sweater</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>65.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-5-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">V-neck t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-4-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stylish blouse</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>40.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>50.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-3-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Classy fedora</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>60.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-2-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stardust watch</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>410.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>490.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-1-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SHOES</a>
+                                        <h2 class="d-block"><a href="#">Leather shoes</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>310.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>350.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="her-tab-pane" role="tabpanel" aria-labelledby="her-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-10-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">Dress</a>
+                                        <h2 class="d-block"><a href="#">Midi dress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>100.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>135.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-7-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Women’s sundress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>35.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="him-tab-pane" role="tabpanel" aria-labelledby="him-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-9-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">Men’s longsleave</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>55.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hip-tab-pane" role="tabpanel" aria-labelledby="hip-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-2-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stardust watch</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>410.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>490.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="men-tab-pane" role="tabpanel" aria-labelledby="men-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-11-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Men’s t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-5-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">V-neck t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trinding-tab-pane" role="tabpanel" aria-labelledby="trinding-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-6-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Set-in sweater</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>65.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-4-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stylish blouse</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>40.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>50.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="uncategorized-tab-pane" role="tabpanel"
+                            aria-labelledby="uncategorized-tab" tabindex="0">
+                            <p>No products were found matching your selection.</p>
+                        </div>
+                        <div class="tab-pane fade" id="winter-tab-pane" role="tabpanel" aria-labelledby="winter-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-3-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Classy fedora</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>60.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-1-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SHOES</a>
+                                        <h2 class="d-block"><a href="#">Leather shoes</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>310.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>350.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="women-tab-pane" role="tabpanel" aria-labelledby="women-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-12-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">POLO</a>
+                                        <h2 class="d-block"><a href="#">Light turtleneck</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>23.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>32.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-8-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">DRESS</a>
+                                        <h2 class="d-block"><a href="#">Sundress newpoint</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>85.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>95.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-11-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Men’s t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-7-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Women’s sundress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>35.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-3-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Classy fedora</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>60.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="dress-tab-pane" role="tabpanel" aria-labelledby="dress-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-10-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">Dress</a>
+                                        <h2 class="d-block"><a href="#">Midi dress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>100.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>135.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-7-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">COLLECTION</a>
+                                        <h2 class="d-block"><a href="#">Women’s sundress</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>35.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="polo-tab-pane" role="tabpanel" aria-labelledby="polo-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-12-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">POLO</a>
+                                        <h2 class="d-block"><a href="#">Light turtleneck</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>23.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>32.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sale-tab-pane" role="tabpanel" aria-labelledby="sale-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-6-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Set-in sweater</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>65.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>75.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-4-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stylish blouse</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>40.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>50.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-2-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SALE</a>
+                                        <h2 class="d-block"><a href="#">Stardust watch</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>410.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>490.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="season-tab-pane" role="tabpanel" aria-labelledby="season-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-9-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">Men’s longsleave</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>45.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>55.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-5-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SEASON</a>
+                                        <h2 class="d-block"><a href="#">V-neck t-shirt</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>30.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="shoes-tab-pane" role="tabpanel" aria-labelledby="shoes-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 project-card pb-3">
+                                    <div class="image-overlay position-relative">
+                                        <div
+                                            class=" overlay d-flex justify-content-center align-items-center position-absolute top-0 bottom-0 gap-4">
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </span>
+                                            <span class="sqare">
+                                                <i class="fa-solid fa-link"></i>
+                                            </span>
+                                        </div>
+                                        <img src="../image/shop/product-1-copyright-238x287.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="d-block">SHOES</a>
+                                        <h2 class="d-block"><a href="#">Leather shoes</a></h2>
+                                        <span class="price d-block">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>310.00</bdi>
+                                            </span> –
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>350.00</bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? Start footer -->
+    <section class="contactsFooter py-5 text-center m-5">
+        <div class="container px-5 py-5">
+            <div class="d-flex justify-content-center">
+                <div class="signUpContainer position-relative py-2 w-50 ">
+                    <input class="signUp" type="email" name="email" placeholder="NEWSLETTER SIGN UP">
+                    <button type="submit" class="signupSubmit position-absolute"><a href="signup.html"><i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+            <div class="menuFooter">
+                <ul class="ps-0 text-dark">
+                    <li class="fs-13 px-3 pt-5 pb-4"><a href="../../index.html" class="text-decoration-none">HOME</a>
+                    </li>
+                    <li class="fs-13 px-3 pt-5 pb-4 active"><a href="#" class="text-decoration-none">SHOP</a></li>
+                    <li class="fs-13 px-3 pt-5 pb-4"><a href="news.html" class="text-decoration-none">NEWS</a></li>
+                    <li class="fs-13 px-3 pt-5 pb-4"><a href="contacts.html" class="text-decoration-none">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="Copyright">
+                Copyright &copy; 2023 by <a href="https://themerex.net" target="_blank"
+                    class="text-decoration-none">ThemeREX</a>. All rights reserved.
+            </div>
+            <div class="footerIcon pt-5 d-flex justify-content-center">
+                <ul class="d-flex ps-0">
+                    <li class="px-3"><a href="#" class="text-decoration-none "><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="px-3"><a href="#" class="text-decoration-none"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="px-3"><a href="#" class="text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="px-3"><a href="#" class="text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!--? End footer -->
+    <!--! start js -->
+    <!--? boot strap -->
+    <script src="../../vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--? sweet alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--? main.js -->
+    <script src="../js/main.js"></script>
+    <!--? signin.js  -->
+    <script src="../js/signin.js"></script>
+    <!--! end js -->
+</body>
